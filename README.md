@@ -1,4 +1,4 @@
-# Nigeria-COVID-19-Data-Analysis-Using-Python
+# Nigeria-COVID-19-Data-Analysis-Using-Python To be edited later.
 Data Collection
 I collected the required data from the website and other sources as directed. As described in the project instructions, you will perform a web scrap to obtain data from the NCDC website, import Task 1 - Data Collection
 Here you will obtain the required data for the analysis. As described in the project instructions, you will perform a web scrap to obtain data from the NCDC website, import data from the John Hopkins repository, and import the provided external data.
