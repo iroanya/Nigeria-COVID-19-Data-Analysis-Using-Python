@@ -1,67 +1,37 @@
 # Nigeria-COVID-19-Data-Analysis-Using-Python To be edited later.
 Data Collection
-I collected the required data from the website and other sources as directed. As described in the project instructions, you will perform a web scrap to obtain data from the NCDC website, import Task 1 - Data Collection
-Here you will obtain the required data for the analysis. As described in the project instructions, you will perform a web scrap to obtain data from the NCDC website, import data from the John Hopkins repository, and import the provided external data.
-Task 2 - View the data
-Obtain basic information about the data using the head() and info() method..
-Task 3 - Data Cleaning and Preparation
-From the information obtained above, you will need to fix the data format.
+I collected the required data from the website and other sources as directed. 
+A. From John Hopkins GitHub repository.
+B From NCDC website. However, I have problems scraping data from the website as the COVID19 data on the NCDC website appears not to be functional. I had to copy saved data to my pc and used that for the dataframe. 
+C. I took data from the Ustacky Github repository to complete the data collection process.
+View the data
+I used the standard head() and info() method to view the information in the dataframes.
+Data Cleaning and Preparation
+Refer to included workbook, Ustacky Capstone final for data cleaning methods used.
 
+Analysis
+After cleaning the data I the dataframe to do the following.
+A. Get information for the highest confirmed cases.
+B. Retrieve information on the highest discharged cases.
+C. Get information on the States with the highest deaths. 
+D. Combine external dataset and the NCDC data to form a dataframe.
 
-Examples: * Convert to appropriate data type. * Rename the columns of the scraped data. * Remove comma(,) in numerical data * Extract daily data for Nigeria from the Global daily cases data
-TODO A - Clean the scraped data
-TODO B - Get a Pandas DataFrame for Daily Confirmed Cases in Nigeria. Columns are Date and Cases
+Observations.
+The external dataset and the NCDC data represent health data from the all the states of Nigeria. Combining these two dataframes, the following observations were made. 
+1. There were some problems noticed on the NCDC data. Eg, some states recorded zero hospitalizations but with a number of discharged cases. How they were discharged was not captured for clarity purposes.
+2. The vulnerabilty index did not influence the covid-19 cases recorded in the states. Lagos with the least CCVI of 0.0 had more cases than all the top ten states including Kaduna with the highest CCVI of 0.7.
+3. However, when the populations are compared, the case density appears to be more on the states with with higher populations except Kano state.
+4. Edo state recorded 7,928 confirmed cases, zero hospitalizations, but with a mortality rate of almost 5%. This is the highest mortlity rate, making Edo State an outlier.
+5. Using a regression plot to plot the population density and infections rate, it was observed that Lagos and Rivers were outliers with high population densities and infections. FCT and Kano were also outliers with high population densities and infection rates below the regression line (see attached graph in the workbook).
 
-TODO C - Get a Pandas DataFrame for Daily Recovered Cases in Nigeria. Columns are Date and Cases
+Economic Effects.
+Plotting bar charts from the extracted GDP data. The following were observed. See attached workbook for the plots.
+1. From 2014, the GDP grew from the first quarter and climaxed by the fourth quarter of every year. 
+2. There was an observable difference on the general improvements year on year, except for 2015 and 2016 which returned almost identical data.
+3. The effect of the pandemic is most noticeable when data from the first quarters are compare. 2020 outperformed the first quarters of the previous years. As soon as the effects of the pandemic kicked in the second quarter, the GDP crashed.
+4. At the third quarter, after the peak of thye pandemic, the GDP rebounded.
 
-TODO D - Get a Pandas DataFrame for Daily Death Cases in Nigeria. Columns are Date and Cases
+Conclusion
+From the studied data it can be deduced that the pandemic had a negative effect of the economy. However, the economy was resilient enough to rebound as soon as the pandemic waned. This recovery can only be attributed to a very robust economy.
+   
 
-Task 4 - Analysis
-Here you will perform some analyses on the datasets. You are welcome to communicate findings in charts and summary.
-
-
-We have included a few TODOs to help with your analysis. However, do not let this limit your approach, feel free to include more, and be sure to support your findings with chart and summaryTask 4 - Analysis
-Here you will perform some analyses on the datasets. You are welcome to communicate findings in charts and summary.
-
-
-We have included a few TODOs to help with your analysis. However, do not let this limit your approach, feel free to include more, and be sure to support your findings with chart and summary
-TODO A - Generate a plot that shows the Top 10 states in terms of Confirmed Covid cases by Laboratory test
-
-TODO B - Generate a plot that shows the Top 10 states in terms of Discharged Covid cases. Hint - Sort the values
-
-TODO D - Plot the top 10 Death cases
-
-TODO E - Generate a line plot for the total daily confirmed, recovered and death cases in Nigeria
-
-TODO F -
-
-Determine the daily infection rate, you can use the Pandas diff method to find the derivate of the total cases.
-Generate a line plot for the above
-TODO G -
-
-Calculate maximum infection rate for a day (Number of new cases)
-Find the date
-TODO H - Determine the relationship between the external dataset and the NCDC COVID-19 dataset. Here you will generate a line plot of top 10 confirmed cases and the overall community vulnerability index on the same axis. From the graph, explain your observation.
-
-
-Steps * Combine the two dataset together on a common column(states) * Create a new dataframe for plotting. This DataFrame will contain top 10 states in terms of confirmed cases i.e sort by confirmed cases. ** Hint: Check out Pandas [nlargest](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.nlargest.html) function. This [tutorial](https://cmdlinetips.com/2019/03/how-to-select-top-n-** * Plot both variable on the same axis. Check out this [tutorial](http://kitchingroup.cheme.cmu.edu/blog/2013/09/13/Plotting-two-datasets-with-very-different-scales/)
-TODO I - Determine the relationship between the external dataset and the NCDC COVID-19 dataset.
-
-Here you will generate a regression plot between two variables to visualize the linear relationships - Confirmed Cases and Population Density.
-Hint: Check out Seaborn Regression Plot.
-
-Provide a summary of your observation
-TODO J -
-
-Provide more analyses by extending TODO G & H. Meaning, determine relationships between more features.
-Provide a detailed summary of your findings.
-Note that you can have as many as possible.
-TODO L -
-Determine the effect of the Pandemic on the economy. To do this, you will compare the Real GDP value Pre-COVID-19 with Real GDP in 2020 (COVID-19 Period, especially Q2 2020)
-
-
-Steps * From the Real GDP Data, generate a `barplot` using the GDP values for each year & quarters. For example: On x-axis you will have year 2017 and the bars will be values of each quarters(Q1-Q4). You expected to have subplots of each quarters on one graph.
-Hint: Use [Pandas.melt](https://pandas.pydata.org/docs/reference/api/pandas.melt.html) to create your plot DataFrame * Set your quarter legend to lower left. * Using `axhline`, draw a horizontal line through the graph at the value of Q2 2020. * Write out your observation
-Note: Do not limit your analysis to the provided TODOs. Perform more analyses e.g
-Check for more external dataset
-Ask more questions & find the right answers by exploring the data
