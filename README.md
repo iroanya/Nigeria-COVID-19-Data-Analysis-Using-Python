@@ -19,7 +19,7 @@ Refer to included workbook, Ustacky Capstone final for data cleaning methods use
 
 Analysis.
 
-After cleaning the data I the dataframe to do the following.
+After cleaning the data I used the dataframe to do the following.
 
 A. Get information for the highest confirmed cases.
 
@@ -27,21 +27,21 @@ B. Retrieve information on the highest discharged cases.
 
 C. Get information on the States with the highest deaths. 
 
-D. Combine external dataset and the NCDC data to form a dataframe.
+D. Combine external dataset and the NCDC data to form another dataframe.
 
 Observations.
 
-The external dataset and the NCDC data represent health data from the all the states of Nigeria. Combining these two dataframes, the following observations were made. 
+The external dataset and the NCDC data represent health data from all the states of Nigeria. Combining these two dataframes, the following observations were made. 
 
 1. There were some problems noticed on the NCDC data. Eg, some states recorded zero hospitalizations but with a number of discharged cases. How they were discharged was not captured for clarity purposes.
  
-2. The vulnerabilty index did not influence the covid-19 cases recorded in the states. Lagos with the least CCVI of 0.0 had more cases than all the top ten states including Kaduna with the highest CCVI of 0.7.
+2. The vulnerabilty index did not influence the covid-19 cases recorded in the states. Lagos with the least CCVI of 0.0 had more cases than all the states in the top ten, including Kaduna with the highest CCVI of 0.7.
    
-3. However, when the populations are compared, the case density appears to be more on the states with with higher populations except Kano state.
+3. However, when the populations are compared, the case numbers appear to be more on the states with with higher populations except for Kano state.
    
 4. Edo state recorded 7,928 confirmed cases, zero hospitalizations, but with a mortality rate of almost 5%. This is the highest mortlity rate, making Edo State an outlier.
  
-5. Using a regression plot to plot the population density and infections rate, it was observed that Lagos and Rivers were outliers with high population densities and infections. FCT and Kano were also outliers with high population densities and infection rates below the regression line (see attached graph in the workbook).
+5. Using a regression plot to plot the population density and infections rate, it was observed that Lagos and Rivers were the only states with high population densities and high infections rates. FCT and Kano were outliers with high population densities and infection rates below the regression line (see attached graph in the workbook).
 
 Economic Effects.
 
@@ -51,12 +51,14 @@ Plotting bar charts from the extracted GDP data. The following were observed. Se
    
 2. There was an observable difference on the general improvements year on year, except for 2015 and 2016 which returned almost identical data.
    
-3. The effect of the pandemic is most noticeable when data from the first quarters are compare. 2020 outperformed the first quarters of the previous years. As soon as the effects of the pandemic kicked in the second quarter, the GDP crashed.
+3. The effect of the pandemic is most noticeable when data from the first quarters are compared. 2020 outperformed the first quarters of the previous years. At the second quarter, which was at the very peak of the pandemic with shutdowns and zero economic activities, the GDP reflected this by going down.
    
-4. At the third quarter, after the peak of thye pandemic, the GDP rebounded.
+4. However, by the third quarter, after the lockdowns due to the pandemic and reopening of businesses, the GDP rebounded.
 
 Conclusion.
 
-From the studied data it can be deduced that the pandemic had a negative effect of the economy. However, the economy was resilient enough to rebound as soon as the pandemic waned. This recovery can only be attributed to a very robust economy.
+From the studied data it can be deduced that the pandemic had a negative effect on the economy. However, the economy was resilient enough to rebound as soon as the pandemic waned. This recovery speed can only be attributed to an economy that is very robust.
+
+Again, population densities and CCVI did not affect the overall trend of the pandemic spread. It is worthy of note that the Lagos State health system worked wonderfully well in the treatment and discharge of confirmed cases, thereby averting a high death toll.
    
 
