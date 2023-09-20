@@ -1,6 +1,6 @@
 # Nigeria-COVID-19-Data-Analysis-Using-Python.
-# Capstone Project
-# Workbook: https://github.com/iroanya/Nigeria-COVID-19-Data-Analysis-Using-Python/blob/main/Ustacky%20Capstone%20Final.ipynb
+# Data Scientist Microdegree Capstone Project
+ Workbook: https://github.com/iroanya/Nigeria-COVID-19-Data-Analysis-Using-Python/blob/main/Ustacky%20Capstone%20Final.ipynb
 
 Data Collection.
 
