@@ -1,4 +1,7 @@
-# Nigeria-COVID-19-Data-Analysis-Using-Python To be edited later.
+# Nigeria-COVID-19-Data-Analysis-Using-Python.
+# Capstone Project
+# Workbook: https://github.com/iroanya/Nigeria-COVID-19-Data-Analysis-Using-Python/blob/main/Ustacky%20Capstone%20Final.ipynb
+
 Data Collection.
 
 I collected the required data from the website and other sources as directed. 
