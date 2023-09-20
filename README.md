@@ -5,7 +5,7 @@ I collected the required data from the website and other sources as directed.
 
 A. From John Hopkins GitHub repository.
 
-B From NCDC website. However, I have problems scraping data from the website as the COVID19 data on the NCDC website appears not to be functional. I had to copy saved data to my pc and used that for the dataframe. 
+B From NCDC website. However, I have problems scraping data from the website as the COVID19 data on the NCDC website appears not to be functional. I had to copy saved data to my pc and used that for the dataframe, see https://github.com/iroanya/Nigeria-COVID-19-Data-Analysis-Using-Python/blob/main/NCDC%20Covid19%20Data.docx
 
 C. I took data from the Ustacky Github repository to complete the data collection process.
 
