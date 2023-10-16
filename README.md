@@ -202,7 +202,10 @@ top_ten.plot(kind='bar', x='States Affected', y='Discharged')
 
 # Show the plot
 plt.show()
+
 ```
+![image](https://github.com/iroanya/Nigeria-COVID-19-Data-Analysis-Using-Python/assets/142989933/85172445-b0c7-447c-bdfd-156df0f60574)
+
   
 
 C. Get information on the States with the highest deaths. 
@@ -219,6 +222,7 @@ top_ten.plot(kind='bar', x='States Affected', y='Deaths')
 plt.show()
 
 ```
+![image](https://github.com/iroanya/Nigeria-COVID-19-Data-Analysis-Using-Python/assets/142989933/e562904b-8540-4f76-ae7e-1febaf7aac3a)
 
 D. To generate a plot for the total, confirmed, discharged and death cases from the John Hopkins dataframe for Nigeria.
 
@@ -248,6 +252,7 @@ plt.yscale('log')
 plt.show()
 
 ```
+![image](https://github.com/iroanya/Nigeria-COVID-19-Data-Analysis-Using-Python/assets/142989933/26919edd-05a5-47c0-827f-23e6dfc6a983)
 
 ```python
 John_Hopkins_Nigeria_data_trans = John_Hopkins_Nigeria_data.transpose()
@@ -271,6 +276,7 @@ plt.legend()
 plt.grid(True)
 plt.show()
 ```
+![image](https://github.com/iroanya/Nigeria-COVID-19-Data-Analysis-Using-Python/assets/142989933/ef5c8b58-d1d0-4b00-9185-1fd648423ab5)
 
 
 E. To calculate the daily infection rate rate using the diff() method.
@@ -300,6 +306,8 @@ plt.legend()
 
 plt.show()
 
+![image](https://github.com/iroanya/Nigeria-COVID-19-Data-Analysis-Using-Python/assets/142989933/bd0350d1-d6df-423c-88ea-e2445a18a97d)
+
 F. Having isolated the date with the highest infection rate, I tried to see if this also reflected the highest daily death. This was not so.
 
 
@@ -319,13 +327,14 @@ John_Hopkins_Nigeria_data_transposed['daily_deaths'].plot(kind='line', title='Da
 plt.xlabel('Date')
 plt.ylabel('Daily Deaths')
 
-# Highlight the date with the highest infection rate
+# Highlight the date with the highest death rate
 plt.axvline(x=date_highest_death, color='r', linestyle='--', label=f'Highest Death Rate ({highest_death_rate}) on {date_highest_death}')
 plt.legend()
 
 plt.show()
 
 ```
+![image](https://github.com/iroanya/Nigeria-COVID-19-Data-Analysis-Using-Python/assets/142989933/eabd36fe-9baf-4558-b02a-611720fc35ec)
 
 
 Nigeria recorded the highest infection rate of 6,158 on December 22, 2021 and the highest death rate of 93 on August 29, 2021. This shows that a high daily infection rate did not necessarily lead to a higher death rate afterwards.
@@ -359,6 +368,7 @@ sns.regplot(x ='Population Density', y ='Cases', data=merged_Nigera_data_top10)
 plt.show()
 
 ```
+![image](https://github.com/iroanya/Nigeria-COVID-19-Data-Analysis-Using-Python/assets/142989933/6455c38b-6b43-4764-b9c8-230dc38598c9)
 
 
 ```python
@@ -370,6 +380,7 @@ plt.ylabel('Cases')
 plt.title('Population Density vs Cases')
 plt.show()
 ```
+![image](https://github.com/iroanya/Nigeria-COVID-19-Data-Analysis-Using-Python/assets/142989933/8360a6be-0d14-4e32-ae15-d927af48e1f2)
 
 
 ```python
@@ -381,6 +392,7 @@ plt.ylabel('Cases')
 plt.title('Population Density vs Cases')
 plt.show()
 ```
+![image](https://github.com/iroanya/Nigeria-COVID-19-Data-Analysis-Using-Python/assets/142989933/7a4b2e0c-b3d4-4377-bd43-bce262f435fd)
 
 
 The cases numbers appear to be higher in areas with high population densities with few exceptions including Oyo, Delta, Ogun and Kano states.
@@ -409,6 +421,7 @@ ax2.tick_params(axis='y', labelcolor=color)
 # Show the plot
 plt.show()
 ```
+![image](https://github.com/iroanya/Nigeria-COVID-19-Data-Analysis-Using-Python/assets/142989933/9336269a-9bf7-42f2-8c59-27899841876e)
 
 From the plot above, overall CCVI did not appear to have had any influence on the cases recorded.
 
@@ -416,7 +429,7 @@ From the plot above, overall CCVI did not appear to have had any influence on th
 ```python
 fig, ax1 = plt.subplots(figsize=(10, 6))
 
-# Plot 'Overall CCVI Index' on the first y-axis
+# Plot 'Population Density' on the first y-axis
 color = 'tab:green'
 ax1.set_ylabel('Population Density', color=color)
 ax1.plot(merged_Nigera_data_top10['Population Density'], color=color)
@@ -433,6 +446,7 @@ ax2.tick_params(axis='y', labelcolor=color)
 plt.show()
 
 ```
+![image](https://github.com/iroanya/Nigeria-COVID-19-Data-Analysis-Using-Python/assets/142989933/1b78f7f9-8d87-405c-86cb-95d3f1744414)
 
 
 Except for Kano, Oyo, Delta and Ogun, the population density had a great influence on the case numbers.
@@ -477,6 +491,8 @@ ax2.tick_params(axis='y', labelcolor=color)
 plt.title('Relationship between Nigera_NCDC_Data and Nigeria_budget_data')
 plt.show()
 
+![image](https://github.com/iroanya/Nigeria-COVID-19-Data-Analysis-Using-Python/assets/142989933/3b3506c8-6a04-44a2-a748-bf73bd464ab3)
+
 ```
 
 I. The final step was compare the real GDP data for seven years starting from 2014  to visualize the effect of the pandemic on the economy.
@@ -494,6 +510,7 @@ sns.barplot(x='Year', y='Value', hue='Quarter', data=Nigeria_realGDP_melt)
 plt.title('Bar Plot')
 plt.show()
 ```
+![image](https://github.com/iroanya/Nigeria-COVID-19-Data-Analysis-Using-Python/assets/142989933/1cbd5622-48b3-457d-ae55-05c7f71e46d8)
 
 
 ```python
@@ -514,6 +531,7 @@ barplot.legend(loc='lower left', labels=['Q1', 'Q2', 'Q3', 'Q4'])
 plt.title('Bar Plot')
 plt.show()
 ```
+![image](https://github.com/iroanya/Nigeria-COVID-19-Data-Analysis-Using-Python/assets/142989933/b18fda0c-3c7d-42a8-9aa7-e9b1323a868f)
 
 
 Then finally was to compare the yearly quarters separately. The effect was clearly noticeable.
@@ -541,6 +559,7 @@ for i, ax in enumerate(axs):
 plt.tight_layout()
 plt.show()
 ```
+![image](https://github.com/iroanya/Nigeria-COVID-19-Data-Analysis-Using-Python/assets/142989933/28c2c516-c179-4df1-9836-c8f305596cbf)
 
 
 
