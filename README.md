@@ -207,7 +207,6 @@ plt.show()
 ![image](https://github.com/iroanya/Nigeria-COVID-19-Data-Analysis-Using-Python/assets/142989933/85172445-b0c7-447c-bdfd-156df0f60574)
 
   
-
 C. Get information on the States with the highest deaths. 
 Using DataFrame from NCDC website I named 'Nigera_NCDC_Data' I want to plot the top ten rows based on the values in the column 'Deaths'
 
