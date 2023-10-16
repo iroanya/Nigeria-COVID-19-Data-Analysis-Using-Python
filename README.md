@@ -183,7 +183,10 @@ top_ten.plot(kind='bar', x='States Affected', y='Cases')
 # Show the plot
 
 plt.show()
+
 ```
+![image](https://github.com/iroanya/Nigeria-COVID-19-Data-Analysis-Using-Python/assets/142989933/5a4ae6e1-ecbd-43c1-b381-7f93e0b2487b)
+
 
 
 B. Retrieve information on the highest discharged cases.
