@@ -100,9 +100,11 @@ I used the standard head() and info() method to view the information in the data
 
 
 ```python
-Nigeria_realGDP.head(2)
+Nigeria_covidnig_data.head(2)
 ```
-
+States Affected	No. of Cases (Lab Confirmed)	No. of Cases (on admission)	No. Discharged	No. of Deaths
+0	Lagos	26,708	2,435	24,037	236
+1	FCT	9,627	2,840	6,694	93
 
 # Data Cleaning and Preparation
 
